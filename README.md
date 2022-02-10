@@ -1,2 +1,2 @@
-# PHP8-Documentation
-Udemy PHP8 Course Documentation
+# PHP8-Course-Documentation
+PHP8 Udemy Course [7 Hours]
