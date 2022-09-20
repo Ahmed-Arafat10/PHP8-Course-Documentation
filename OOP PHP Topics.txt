@@ -1,0 +1,17 @@
+
+- constructor
+- destructor
+- constant & (self::)
+- this keyword
+- access modifiers (public-private-protected)
+- inheretence
+- override methods
+- override properties
+- include a class file
+- final keyword to prevent ovverding 
+- calling parent constuctor in child class (parent::)
+- static variables (self::$cnt)
+- static merthod (classname::function as it belongs to the class & is shared along all methods)
+- abstract class (no objects only inheretance)
+- abstart methods
+- final class (no inheretance from this class)
