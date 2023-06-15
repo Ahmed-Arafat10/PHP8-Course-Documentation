@@ -80,7 +80,7 @@ class DB
      * @param array|null $bind
      * @return string|null
      */
-    public static function SQLBindString(array $bind = null)
+    protected static function SQLBindString(array $bind = null)
     {
         $Datatypes = null;
         if ($bind) {
@@ -199,4 +199,31 @@ apache_setenv('DB_PASSWORD','');
 apache_setenv('DB_NAME','test');
 apache_setenv('DB_HOST','localhost');
 ?>
+````
+
+#### How to use it In Your Project
+````php
+require_once "DB.php";
+DB::connect();
+
+DB::check();
+
+# Insert a new Record
+DB::table('users')
+    ->insert('(NULL,?,?)', [
+        'Arafat', '123'
+    ]);
+
+# Update a Record
+DB::table('users')->update(' `name` = ? WHERE id = ?', [
+    'Ahmed Arafat', 1
+]);
+
+# Delete a Record
+DB::table('users')->delete('`id` = ?', [1]);
+
+# Select Record(s)
+DB::table('users')->select('*', 'WHERE id BETWEEN ? AND ?', [5, 10]);
+
+DB::close();
 ````
