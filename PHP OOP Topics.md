@@ -1,0 +1,17 @@
+## PHP OOP Topics
+- constructor
+- destructor
+- constant & `self::`
+- `this` keyword
+- access modifiers (`public`/`private`/`protected`)
+- inheritance
+- override methods
+- override properties
+- include a class file
+- final keyword to prevent overriding
+- calling parent constructor in child class (`parent::`)
+- static variables (`self::$cnt`)
+- static method (`classname::function` as it belongs to the class & is shared along all methods)
+- abstract class (no objects only inheritance)
+- abstract methods
+- final class (no inheritance from this class)
