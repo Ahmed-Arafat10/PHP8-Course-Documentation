@@ -1,0 +1,19 @@
+{
+    "name": "ahmed/php_oop",
+    "description": "test autoloading all classes",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "interfaceTest\\": "interfaceTest/",
+            "abstractClass\\": "abstractClass/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AhmedArafat",
+            "email": "ahmedxarafat0101@gmail.com"
+        }
+    ],
+    "require": {}
+}
